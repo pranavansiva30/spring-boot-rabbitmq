@@ -2,7 +2,9 @@
 
 
 Things to be checked before starting the 2 applications:
+
 spring-boot-rabbitmq-producer
+
 spring-boot-rabbitmq-consumer
 do the following changes in both application
 
