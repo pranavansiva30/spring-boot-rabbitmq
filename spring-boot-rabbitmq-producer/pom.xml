@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.wavesdev</groupId>
-	<artifactId>spring-boot-rabbitmq</artifactId>
+	<artifactId>spring-boot-rabbitmq-producer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>spring-boot-rabbitmq</name>
+	<name>spring-boot-rabbitmq-producer</name>
 	<description>Demo project for Spring Boot and RabbitMQ</description>
 
 	<parent>

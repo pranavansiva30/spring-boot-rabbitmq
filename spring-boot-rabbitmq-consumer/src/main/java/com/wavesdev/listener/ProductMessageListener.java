@@ -1,6 +1,6 @@
 package com.wavesdev.listener;
 
-import com.wavesdev.SpringBootRabbitMQApplication;
+import com.wavesdev.SpringBootRabbitMQConsumerApplication;
 import com.wavesdev.domain.Product;
 import com.wavesdev.repositories.ProductRepository;
 import org.springframework.stereotype.Component;
@@ -25,7 +25,7 @@ public class ProductMessageListener {
 
     /**
      * This method is invoked whenever any new message is put in the queue.
-     * See {@link SpringBootRabbitMQApplication} for more details
+     * See {@link SpringBootRabbitMQConsumerApplication} for more details
      * @param message
      */
     public void receiveMessage(Map<String, String> message) {

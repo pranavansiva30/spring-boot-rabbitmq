@@ -1,6 +1,6 @@
 package com.wavesdev.services;
 
-import com.wavesdev.SpringBootRabbitMQApplication;
+import com.wavesdev.SpringBootRabbitMQProducerApplication;
 import com.wavesdev.commands.ProductForm;
 import com.wavesdev.domain.Product;
 import com.wavesdev.converters.ProductFormToProduct;
@@ -74,6 +74,6 @@ public class ProductServiceImpl implements ProductService {
         Map<String, String> actionmap = new HashMap<>();
         actionmap.put("id", id);
         log.info("Sending the index request through queue message");
-        rabbitTemplate.convertAndSend(SpringBootRabbitMQApplication.SFG_MESSAGE_QUEUE, actionmap);
+        rabbitTemplate.convertAndSend(SpringBootRabbitMQProducerApplication.SFG_MESSAGE_QUEUE, actionmap);
     }
 }

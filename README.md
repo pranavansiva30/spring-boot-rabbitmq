@@ -1,7 +1,10 @@
 # Spring Boot RabbitMQ Example
 
 
-Things to be checked before starting the application:
+Things to be checked before starting the 2 applications:
+spring-boot-rabbitmq-producer
+spring-boot-rabbitmq-consumer
+do the following changes in both application
 
 * Update the application.properties file with your MySQL username and password
 * Create a new database schema with name springboot_rabbitmq_example

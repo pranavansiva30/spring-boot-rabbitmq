@@ -13,7 +13,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class SpringBootRabbitMQApplication {
+public class SpringBootRabbitMQConsumerApplication {
 
 	public final static String SFG_MESSAGE_QUEUE = "sfg-message-queue";
 
@@ -48,6 +48,6 @@ public class SpringBootRabbitMQApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootRabbitMQApplication.class, args);
+		SpringApplication.run(SpringBootRabbitMQConsumerApplication.class, args);
 	}
 }

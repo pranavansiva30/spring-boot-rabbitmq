@@ -5,9 +5,7 @@ import com.wavesdev.commands.ProductForm;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
-/**
- * Created by jt on 1/10/17.
- */
+
 @Component
 public class ProductToProductForm implements Converter<Product, ProductForm> {
     @Override
