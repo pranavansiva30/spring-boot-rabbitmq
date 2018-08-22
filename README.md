@@ -14,9 +14,12 @@ do the following changes in both application
 * If you wish to used a different database / schema, you will need to override values in application.properties
 * Ensure that you have a rabbitmq server running and correctly configured in application.properties (default is localhost:5671) )
 
+start 
+spring-boot-rabbitmq-producer,spring-boot-rabbitmq-consumer applications
+
 Application flow:
  
-* Once the application is started, a browser at http://localhost:8081
+* Once the spring-boot-rabbitmq-producer application is started, a browser at http://localhost:8081
 * Create a new Product record
 * Notice that the value for "Is Message Sent" in the http://localhost:8081/product/show/1 is currently set to false.
 * There is a link at the bottom of this record "Send messages through queue listener"
